@@ -12,4 +12,3 @@ func apply_damage(damage: int) -> void:
 	
 	if current_damage == max_damage:
 		max_damage_reached.emit()
-	

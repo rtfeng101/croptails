@@ -1,0 +1,10 @@
+class_name CollectableComponent
+extends Area2D
+
+@export var collectable_name: String
+
+func _on_body_entered(body: Node2D) -> void:
+	if body is Player:
+		print("Collected")
+		# will take actual collectable object and free
+		get_parent().queue_free()

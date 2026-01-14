@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://ceg0vexucsn13"]
 
-[ext_resource type="Shader" uid="uid://bs0nj1oyehxji" path="res://scenes/objects/trees/tree_shake.gdshader" id="1_f4wgc"]
+[ext_resource type="Shader" uid="uid://bs0nj1oyehxji" path="res://scenes/objects/shake.gdshader" id="1_f4wgc"]
 [ext_resource type="Texture2D" uid="uid://b87mv5mek8g0o" path="res://assets/game/objects/basic_grass_biome_things.png" id="1_lwbpo"]
 [ext_resource type="PackedScene" uid="uid://iw6ss4ln5i0p" path="res://scenes/components/hurt_component.tscn" id="2_ivetc"]
 [ext_resource type="Script" uid="uid://cat11afiiacr8" path="res://scenes/objects/trees/tree.gd" id="2_wjqkr"]
@@ -32,6 +32,7 @@ material = SubResource("ShaderMaterial_6vpey")
 position = Vector2(0, -14)
 texture = SubResource("AtlasTexture_sx6ol")
 script = ExtResource("2_wjqkr")
+log_count = 2
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
